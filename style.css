@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15rem;
+    gap: 30px;
+    cursor: pointer;
+}
+
+a {
+    background-image: url("fechado.png");
+    background-size: 100%;
+    border: none;
+    width: 75px;
+    height: 75px;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main:hover a, main:hover button{
+    background-image: url("aberto.png");
+}
+
+.hide {
+    display: none;
+}
